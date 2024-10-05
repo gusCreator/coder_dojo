@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <h1>Calculadora</h1>
+  <h3>Cual es el resultado?</h3>
+  <p id="resultado">Aquí va a aparecer el resultado</p>
+  <script src="script.js"></script>
+  <form onsubmit="calcular(operando1.value, operador.value, operando2.value)">
+    <input type="number" name="operando1">
+    <select name="operador">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="x">x</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" name="operando2">
+    <button type="submit">Calcúlalo</button>
+  </form>
+</body>
+</html>
